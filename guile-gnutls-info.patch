@@ -1,0 +1,14 @@
+--- guile-gnutls-3.7.11/doc/gnutls-guile.texi.orig	2022-12-07 22:02:41.000000000 +0100
++++ guile-gnutls-3.7.11/doc/gnutls-guile.texi	2022-12-11 14:26:50.554727039 +0100
+@@ -29,9 +29,9 @@ Documentation License''.
+ @end quotation
+ @end copying
+ 
+-@dircategory Software libraries
++@dircategory Libraries:
+ @direntry
+-* Guile-GnuTLS: (gnutls-guile).		Guile bindings for GNU Transport Layer Security Library.
++* Guile-GnuTLS: (gnutls-guile).		Guile bindings for GNU Transport Layer Security Library
+ @end direntry
+ 
+ @titlepage
