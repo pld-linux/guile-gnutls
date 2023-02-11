@@ -2,8 +2,7 @@ Summary:	Guile bindings for GnuTLS
 Summary(pl.UTF-8):	Wiązania Guile do GnuTLS
 Name:		guile-gnutls
 Version:	3.7.11
-# start building for gnutls 3.7.9+, which will drop guile binding from main repo
-Release:	0.1
+Release:	1
 License:	LGPL v2.1+ (library), FDL v1.3+ (documentation)
 Group:		Development/Languages
 Source0:	https://ftp.gnu.org/gnu/gnutls/%{name}-%{version}.tar.gz
@@ -34,6 +33,8 @@ Wiązania Guile do GnuTLS.
 %build
 %configure \
 	--disable-silent-rules
+
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
