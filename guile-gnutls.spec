@@ -1,12 +1,12 @@
 Summary:	Guile bindings for GnuTLS
 Summary(pl.UTF-8):	Wiązania Guile do GnuTLS
 Name:		guile-gnutls
-Version:	4.0.1
+Version:	5.0.1
 Release:	1
 License:	LGPL v2.1+ (library), FDL v1.3+ (documentation)
 Group:		Development/Languages
 Source0:	https://ftp.gnu.org/gnu/gnutls/%{name}-%{version}.tar.gz
-# Source0-md5:	c56b57d6382de132434b9a180d278e2f
+# Source0-md5:	32084c6251713db026ad13e5e399be7b
 Patch0:		%{name}-info.patch
 URL:		https://gitlab.com/gnutls/guile
 BuildRequires:	gc-devel >= 7.3
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/guile/3.*/extensions/guile-gnutls-v-2.so*
+%{_libdir}/guile/3.*/extensions/guile-gnutls-v-2.so*
 %{_libdir}/guile/3.*/site-ccache/gnutls.go
 %{_libdir}/guile/3.*/site-ccache/gnutls
 %{_datadir}/guile/site/3.*/gnutls.scm
